@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { replaceChar } from '../utils';
 
 const Publications = () => {
   const [active, setActive] = useState('All');
@@ -63,11 +64,14 @@ const Publications = () => {
                 }
               >
                 <div>
-                  <h3 className='text-black text-lg font-bold mb-2 dark:text-white'>
-                    {publication.authors}
-                  </h3>
+                  <h3
+                    className='text-black text-lg font-normal mb-2 dark:text-white'
+                    dangerouslySetInnerHTML={{
+                      __html: replaceChar(publication.authors, '#'),
+                    }}
+                  ></h3>
                   <p
-                    className='text-black text-[12px] dark:text-light-text'
+                    className='text-black text-[10px] dark:text-light-text'
                     style={{ margin: 0 }}
                   >
                     {publication.details}

@@ -17,6 +17,7 @@ import {
   FaLinkedin,
   FaResearchgate,
 } from 'react-icons/fa';
+import { replaceChar } from '../utils';
 
 const Home = () => {
   return (
@@ -88,9 +89,12 @@ const Home = () => {
                 Developer | Data Engineer/Analyst
               </span>
             </h3>
-            <p className='text-light-gray dark:text-light-text leading-7'>
-              {aboutMe}
-            </p>
+            <p
+              className='text-light-gray dark:text-light-text leading-7'
+              dangerouslySetInnerHTML={{
+                __html: replaceChar(aboutMe, '#'),
+              }}
+            ></p>
           </div>
           <div>
             <h3 className='text-2xl font-medium my-5 dark:text-white'>

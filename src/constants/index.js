@@ -69,15 +69,10 @@ export const navLinks = [
   },
 ];
 
-export const aboutMe = `I have earned two Masters degrees
-in Computer Science from the University of La Rochelle and the University of
-Vietnam, as well as an engineer degree in Telecommunications from the
-University of Abomey Calavi. Currently, I am pursuing a PhD, where I am creating
-automated tools to facilitate citizens' utilization of open government data. My
-extensive background in information technology encompasses a broad range of IT
-development areas, such as web application development, mobile application
-development, desktop application development, ERP development and ETL applications.
-Furthermore, I have led a team of 12 developers using the agile method.`;
+export const aboutMe = `
+I hold #two Master's degrees# in Computer Science from the #University of La Rochelle, France# and 
+the #University of Vietnam#, along with an #engineering degree# in Telecommunications from the #University of Abomey Calavi, Benin#.
+ I'm currently undertaking a #PhD#, focusing on the development of #automated tools# to enhance citizen engagement with #open government data#. My comprehensive IT experience spans diverse domains, including #web, mobile, desktop, and ERP application development, as well as ETL applications#. I've also had the privilege of leading a #12-member development team#, employing #agile# methodologies.`;
 
 export const github = 'https://github.com/chokkipaterne';
 export const researchgate =
@@ -128,39 +123,38 @@ export const services = [
   {
     icon: FaServicestack,
     title: 'Web Development',
-    details:
-      'Develop web applications using Django, Laravel, React, Nextjs, Angular, Wordpress',
+    details: 'Develop web applications',
     color: 'gray-light',
   },
   {
     icon: FaServicestack,
     title: 'Mobile Development',
-    details: 'Develop mobile applications using Ionic, Flutter',
+    details: 'Develop mobile applications',
     color: 'gray-light',
   },
   {
     icon: FaServicestack,
     title: 'Ecommerce Development',
-    details: 'Develop ecommerce applications using Wordpress and Woocommerce',
+    details: 'Develop ecommerce applications',
     color: 'gray-light',
   },
   {
     icon: FaServicestack,
     title: 'Data Engineering',
     details:
-      'Collect, clean, check quality your data and make them available for analysis',
+      'Collect, clean, check quality data and make them available for analysis',
     color: 'gray-light',
   },
   {
     icon: FaServicestack,
     title: 'Data Analysis',
-    details: 'Convert your data into insightful stories',
+    details: 'Convert data into insightful stories',
     color: 'gray-light',
   },
   {
     icon: FaServicestack,
     title: 'Chatbot Integration',
-    details: 'Creation of chatbot on your own data',
+    details: 'Creation of chatbot on customized input data',
     color: 'gray-light',
   },
 ];
@@ -173,13 +167,13 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'December 2019 - November 2023',
     points: [
-      `Collaborated with diverse OGD stakeholders in Wallonia, encompassing municipal authorities, infomediaries, and citizens, to gather their specific needs.`,
-      `Gained proficiency in ETL processes and created a comprehensive and
-      versatile data storytelling tool, similar to Tableau, using Django, Angular,
-      Plotly, Pandas, and PostgreSQL. This tool was designed to facilitate a rapid
+      `Collaborated with diverse #OGD stakeholders in Wallonia#, encompassing municipal authorities, infomediaries, and citizens, to gather their specific needs.`,
+      `Gained proficiency in #ETL# processes and created a comprehensive and
+      versatile data storytelling tool, similar to #Tableau#, using #Django, Angular,
+      Plotly, Pandas, and PostgreSQL#. This tool was designed to facilitate a #rapid#
       comprehension of open government data for OGD stakeholders.`,
       `Proficiently documented stakeholder requirements, further disseminating
-      insights through 10 scientific publications.`,
+      insights through #10 scientific publications#.`,
     ],
   },
   {
@@ -191,7 +185,7 @@ export const experiences = [
     date: '2022 - 2023',
     points: [
       `Conducting programming practical sessions for students within the faculty.`,
-      `Offering tailored assistance to students struggling with comprehension.`,
+      `Offering #tailored assistance# to students struggling with comprehension.`,
     ],
   },
   {
@@ -201,8 +195,8 @@ export const experiences = [
     iconBg: '#383E56',
     date: '2020 - Present',
     points: [
-      `Designed and implemented AhoueFa's web and mobile platforms using Wordpress, Java, and MySQL, facilitating connections between real estate agencies, customers, buyers, sellers, and service providers.`,
-      `Shaped AhoueFa’s marketing strategy with Facebook Ads, successfully accumulating 10,000 classified listings and 8,000 real estate properties to date.`,
+      `Designed and implemented AhoueFa's web and mobile platforms using #Wordpress, Java, and MySQL#, facilitating connections between #real estate agencies, customers, buyers, sellers, and service providers#.`,
+      `Shaped AhoueFa’s marketing strategy with #Facebook Ads#, successfully accumulating #10,000 classified listings and 8,000 real estate properties# to date.`,
     ],
   },
   {
@@ -212,12 +206,12 @@ export const experiences = [
     iconBg: '#383E56',
     date: '2016 - Present',
     points: [
-      `Designed, developed, and sustained web, mobile, and ERP solutions tailored to client needs, leveraging tools like Yii, Laravel, Vue, Ionic, React, Odoo (Python), Wordpress, MySQL, and PostgreSQL.`,
-      `Led a 12-member team of developers and testers within a SCRUM environment to implement the University of Laos' management system.`,
-      `Designed and sustained a Human Resources Management System for Nam Theun 1 Power Company using Odoo and PostgreSQL.`,
-      `Configuring and managing CPanel or VPS hosting for various web projects.`,
-      `Configuring and managing Google Play and Apple Store hosting for mobile projects.`,
-      `Writing documentation and manuals and training end users.`,
+      `Designed, developed, and sustained #web, mobile, and ERP# solutions tailored to client needs, leveraging tools like #Yii, Laravel, Vue, Ionic, React, Odoo (Python), Wordpress, MySQL, and PostgreSQL#.`,
+      `Led a #12-member team of developers and testers# within a #SCRUM# environment to implement the University of Laos' management system.`,
+      `Designed and sustained a Human Resources Management System for Nam Theun 1 Power Company using #Odoo and PostgreSQL#.`,
+      `Configuring and managing #CPanel or VPS# hosting for various web projects.`,
+      `Configuring and managing #Google Play and Apple Store# hosting for mobile projects.`,
+      `Writing #documentation# and #manuals# and #training# end users.`,
     ],
   },
   {
@@ -227,10 +221,10 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'November 2018 - November 2019',
     points: [
-      `Engineered and sustained the firm's in-house and client projects, encompassing E-commerce platforms, payment gateways, delivery systems, and websites with Laravel, Vue, Ionic, WordPress, and MySQL.`,
-      `Conduct a study on banking systems and supervise the development of the mobile application of BIC Laos bank.`,
-      `Led a team of 3 developers in a SCRUM environment.`,
-      `Meeting with clients to obtain their needs.`,
+      `Engineered and sustained the firm's in-house and client projects, encompassing #E-commerce platforms, payment gateways, delivery systems#, and websites with #Laravel, Vue, Ionic, WordPress, and MySQL#.`,
+      `Conduct a study on #banking systems# and supervise the development of the #mobile application# of BIC Laos bank.`,
+      `Led a team of #3 developers# in a #SCRUM# environment.`,
+      `Meeting with clients to #obtain their needs#.`,
       `Analyzing and identifying appropriate technologies to use.`,
       `Designing project databases.`,
       `Building development teams for different projects.`,
@@ -248,10 +242,10 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'October 2014 - November 2018',
     points: [
-      `Develop and maintain ERP, mobile and web applications based on client requirements using Odoo, Yii, Ionic, MySQL, and PostgreSQL.`,
-      `Spearheaded full project lifecycles, from requirement analysis to implementation and training.`,
-      `Manage a team of 5 developers using SCRUM method.`,
-      `Pioneered internal products, boosting the software department's revenue by 20% initially, with consistent yearly growth of 5-10%.`,
+      `Develop and maintain #ERP, mobile and web applications# based on client requirements using #Odoo, Yii, Ionic, MySQL, and PostgreSQL#.`,
+      `Spearheaded full project lifecycles, from #requirement analysis to implementation and training#.`,
+      `Manage a team of #5 developers# using #SCRUM# method.`,
+      `Pioneered internal products, boosting the #software department's revenue by 20% initially#, with consistent #yearly growth of 5-10%#.`,
       `Meeting clients to obtain their requirements.`,
       `Analyzing and identifying appropriate modules to use in the case of ERP projects.`,
       `Writing reports on internal and external project specifications.`,
@@ -260,10 +254,10 @@ export const experiences = [
       `Contributing to all phases of the project implementation lifecycle.`,
       `Writing well designed, testable, and efficient code.`,
       `Ensuring designs conform to specifications.`,
-      `Writing manuals and training end users.`,
-      `Configuring and managing CPanel and Cloud hosting (for ERP projects).`,
-      `Configuring firewall and SSL to secure hosting access.`,
-      `Writing batch scripts for daily data backup and securing hosting access..`,
+      `Writing #manuals and training# end users.`,
+      `Configuring and managing #CPanel and Cloud hosting# (for ERP projects).`,
+      `Configuring #firewall and SSL# to secure hosting access.`,
+      `Writing #bash scripts# for daily data backup and securing hosting access..`,
     ],
   },
   {
@@ -273,7 +267,7 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'October 2014 - November 2018',
     points: [
-      `Propose and implement a solution allowing the generation of localized synthetic population from aggregated data using JAVA and the GAMA simulator.`,
+      `Propose and implement a solution allowing the generation of localized synthetic population from aggregated data using #JAVA# and the #GAMA# simulator.`,
     ],
   },
   {
@@ -283,8 +277,8 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'March 2012 - September 2012',
     points: [
-      `Write bidding documents for tenders.`,
-      `Develop and maintain web and Windev applications.`,
+      `Write #bidding documents for tenders#.`,
+      `Develop and maintain web and Windev applications using #Java, PHP, Windev, and MySQL#.`,
     ],
   },
   {
@@ -294,7 +288,7 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'August 2011 - February 2012',
     points: [
-      `Propose and implement an improved version of the AODV protocol to enable mobility in hybrid networks using C++ and the NS2 simulator.`,
+      `Propose and implement an improved version of the AODV protocol to enable mobility in hybrid networks using #C++# and the #NS2 simulator#.`,
     ],
   },
 ];
@@ -548,94 +542,94 @@ export const tags = ['All', 'Web', 'Mobile', 'ETL'];
 export const publications = [
   {
     authors:
-      'Chokki, A., Clarinval, A., Simonofski, A., Frénay, B., & Vanderose, B.',
+      '#Chokki, A.#, Clarinval, A., Simonofski, A., Frénay, B., & Vanderose, B.',
     year: '2023',
     details: `Evaluating a Conversational Agent for Open Government Data Quality Assessment. In 29th Americas Conference on Information Systems, pages 1–10.`,
     type: 'Conference',
   },
   {
-    authors: 'Chokki, A., & Vanderose, B.',
+    authors: '#Chokki, A.#, & Vanderose, B.',
     year: '2023',
     details: `From Conventional Open Government Data Portals to Storytelling Portals : The StoryOGD Prototype. In 24th Annual International Conference on Digital Government Research, pages 1–2.`,
     type: 'Conference',
   },
   {
     authors:
-      'Chokki, A., Alexopoulos, C., Saxena, S., Frénay, B., Vanderose, B., & Ali, M.',
+      '#Chokki, A.#, Alexopoulos, C., Saxena, S., Frénay, B., Vanderose, B., & Ali, M.',
     year: '2022',
     details: `Metadata quality matters in Open Government Data (OGD) evaluation! An empirical investigation of OGD portals of the GCC constituents: An empirical investigation of OGD portals of the GCC constituents. Transforming Government: People, Process and Policy.`,
     type: 'Journal',
   },
   {
-    authors: 'Chokki, A., Simonofski, A., Frénay, B., & Vanderose, B.',
+    authors: '#Chokki, A.#, Simonofski, A., Frénay, B., & Vanderose, B.',
     year: '2022',
     details: `Open government data awareness: eliciting citizens’ requirements for application design. Transforming Government: People, Process and Policy.`,
     type: 'Journal',
   },
   {
-    authors: 'Chokki, A., Simonofski, A., Frénay, B., & Vanderose, B. ',
+    authors: '#Chokki, A.#, Simonofski, A., Frénay, B., & Vanderose, B. ',
     year: '2022',
     details: `Engaging Citizens with Open Government Data: The Value of Dashboards Compared to Individual Visualizations. Digital Government: Research and Practice, 3(3), 1–20.`,
     type: 'Journal',
   },
   {
-    authors: 'Chokki, A., Frénay, B., & Vanderose, B.',
+    authors: '#Chokki, A.#, Frénay, B., & Vanderose, B.',
     year: '2022',
     details: `Open Data Explorer: An End-to-end Tool for Data Storytelling using Open Data. In AMCIS 2022.`,
     type: 'Conference',
   },
   {
-    authors: 'Chokki, A., Simonofski, A., Frénay, B., & Vanderose, B.',
+    authors: '#Chokki, A.#, Simonofski, A., Frénay, B., & Vanderose, B.',
     year: '2022',
     details: `Increasing Awareness and Usefulness of Open Government Data: An Empirical Analysis of Communication Methods. In International Conference on Research Challenges in Information Science.`,
     type: 'Conference',
   },
   {
     authors:
-      'Chokki, A., Simonofski, A., Clarinval, A., Frénay, B., & Vanderose, B.',
+      '#Chokki, A.#, Simonofski, A., Clarinval, A., Frénay, B., & Vanderose, B.',
     year: '2022',
     details: `Fostering Interaction between Open Government Data Stakeholders: An Exchange Platform for Citizens, Developers and Publishers. Electronic Government.`,
     type: 'Conference',
   },
   {
-    authors: 'Chokki, A., Abida, R., Frénay, B., Vanderose, B., & Cleve, A.',
+    authors: '#Chokki, A.#, Abida, R., Frénay, B., Vanderose, B., & Cleve, A.',
     year: '2022',
     details: `ODSAG: Enhancing Open Data Discoverability and Understanding through Semantic Annotation. EGOV-CeDEM-ePart 2022, 120.`,
     type: 'Conference',
   },
   {
-    authors: 'Chokki, A., Simonofski, A., Frénay, B., & Vanderose, B.',
+    authors: '#Chokki, A.#, Simonofski, A., Frénay, B., & Vanderose, B.',
     year: '2021',
     details: `Open Government Data for Non-expert Citizens: Understanding Content and Visualizations’ Expectations. In International Conference on Research Challenges in Information Science (pp. 602–608).`,
     type: 'Conference',
   },
   {
     authors:
-      'Kasereka, S., Kasoro, N., Kyamakya, K., Goufo, E.F., Chokki, A., & Yengo, M.',
+      'Kasereka, S., Kasoro, N., Kyamakya, K., Goufo, E.F., #Chokki, A.#, & Yengo, M.',
     year: '2018',
     details: `Agent-Based Modelling and Simulation for evacuation of people from a building in case of fire. Procedia Computer Science, 130, 10–17.`,
     type: 'Journal',
   },
   {
-    authors: 'Chokki, A.',
+    authors: '#Chokki, A.#',
     year: '2014',
     details: `Génération de population synthétique localisée.`,
     type: 'Book',
   },
   {
-    authors: 'Chokki, A., Kasereka, S., Kasoro, N.',
+    authors: '#Chokki, A.#, Kasereka, S., Kasoro, N.',
     year: '2014',
     details: `Un modele centre agents interactifs pour simuler la propagation de la grippe aviaire. Annales de la Faculté des Sciences de l’Université de Kinshasa, 1, 59–68.`,
     type: 'Journal',
   },
   {
-    authors: 'Kasereka, S., Kasoro, N., & Chokki, A.',
+    authors: 'Kasereka, S., Kasoro, N., & #Chokki, A.#',
     year: '2014',
     details: `A hybrid model for modeling the spread of epidemics: Theory and simulation. In 2014 4th international symposium isko-maghreb: Concepts and tools for knowledge management (isko-maghreb) (pp. 1–7).`,
     type: 'Conference',
   },
   {
-    authors: 'Adédjouma, S., Chokki, A., & Dagba, T.',
+    authors: 'Adédjouma, S., #Chokki, A.#, & Dagba, T.',
     year: '2013',
     details: `An Extended AODV Protocol to Support Mobility in Hybrid Networks. International Journal of Computer and Information Technology, 2(3), 500–505.`,
     type: 'Conference',

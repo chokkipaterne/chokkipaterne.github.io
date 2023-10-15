@@ -6,6 +6,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { replaceChar } from '../utils';
 
 const Resume = () => {
   return (
@@ -166,9 +167,10 @@ const Resume = () => {
                       <li
                         key={`exp-point-${index}`}
                         className='text-dark text-[13px] pl-1 tracking-wider'
-                      >
-                        {point}
-                      </li>
+                        dangerouslySetInnerHTML={{
+                          __html: replaceChar(point, '#'),
+                        }}
+                      ></li>
                     ))}
                   </ul>
                 </VerticalTimelineElement>
@@ -219,9 +221,10 @@ const Resume = () => {
                       <li
                         key={`experience-point-${index}`}
                         className='text-light-text text-[13px] pl-1 tracking-wider'
-                      >
-                        {point}
-                      </li>
+                        dangerouslySetInnerHTML={{
+                          __html: replaceChar(point, '#'),
+                        }}
+                      ></li>
                     ))}
                   </ul>
                 </VerticalTimelineElement>
