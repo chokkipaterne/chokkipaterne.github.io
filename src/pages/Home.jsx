@@ -1,6 +1,22 @@
 import React from 'react';
 import profile from '../assets/profile.jpg';
-import { aboutMe, personalInfo, services } from '../constants';
+import {
+  aboutMe,
+  cv,
+  github,
+  googlescholar,
+  linkedin,
+  personalInfo,
+  researchgate,
+  services,
+} from '../constants';
+import {
+  FaFileDownload,
+  FaGithub,
+  FaGoogle,
+  FaLinkedin,
+  FaResearchgate,
+} from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -15,6 +31,52 @@ const Home = () => {
             src={profile}
             className='bg-transparent w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0'
           />
+          <div class='flex justify-center my-4'>
+            {github && (
+              <span
+                title={'Github'}
+                className={`cursor-pointer bg-primary text-white dark:bg-dark shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-[40px] h-[40px]`}
+              >
+                <FaGithub onClick={() => window.open(github, '_blank')} />
+              </span>
+            )}
+            {researchgate && (
+              <span
+                title={'Researchgate'}
+                className={`cursor-pointer bg-primary text-white dark:bg-dark shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-[40px] h-[40px]`}
+              >
+                <FaResearchgate
+                  onClick={() => window.open(researchgate, '_blank')}
+                />
+              </span>
+            )}
+            {googlescholar && (
+              <span
+                title={'Google Scholar'}
+                className={`cursor-pointer bg-primary text-white dark:bg-dark shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-[40px] h-[40px]`}
+              >
+                <FaGoogle
+                  onClick={() => window.open(googlescholar, '_blank')}
+                />
+              </span>
+            )}
+            {linkedin && (
+              <span
+                title={'Linkedin'}
+                className={`cursor-pointer bg-primary text-white dark:bg-dark shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-[40px] h-[40px]`}
+              >
+                <FaLinkedin onClick={() => window.open(linkedin, '_blank')} />
+              </span>
+            )}
+            {cv && (
+              <span
+                title={'Download CV'}
+                className={`cursor-pointer bg-primary text-white dark:bg-dark shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-[80px] h-[40px]`}
+              >
+                <FaFileDownload onClick={() => window.open(cv, '_blank')} /> CV
+              </span>
+            )}
+          </div>
         </div>
         <div className='col-span-12 md:col-span-9 space-y-2.5'>
           <div className=' md:mr-12 xl:mr-16'>
@@ -22,7 +84,7 @@ const Home = () => {
               Abiola Paterne CHOKKI
               <br />
               <span className='text-lg'>
-                PhD Researcher | Co-Founder of AhoueFa.com | Full Stack
+                Co-Founder of AhoueFa.com | PhD Researcher | Full Stack
                 Developer | Data Engineer/Analyst
               </span>
             </h3>

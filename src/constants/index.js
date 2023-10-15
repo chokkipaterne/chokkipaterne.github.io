@@ -9,7 +9,6 @@ import {
   FaMailBulk,
   FaServicestack,
   FaLanguage,
-  FaUser,
   FaPlay,
 } from 'react-icons/fa';
 import HomePage from '../pages/Home';
@@ -21,7 +20,6 @@ import backend from '../assets/backend.png';
 import mobile from '../assets/mobile.png';
 import web from '../assets/web.png';
 import hrdash from '../assets/hrdash.png';
-import mywebsite from '../assets/mywebsite.png';
 import nbdash from '../assets/nbdash.png';
 import ode from '../assets/ode.png';
 import odeon from '../assets/odeon.png';
@@ -31,6 +29,7 @@ import qualityogd from '../assets/qualityogd.png';
 import storedash from '../assets/storedash.png';
 import storyogd from '../assets/storyogd.png';
 import citizenapps from '../assets/citizenapps.png';
+import cvpdf from '../assets/cv.pdf';
 
 export const navLinks = [
   {
@@ -80,13 +79,20 @@ development areas, such as web application development, mobile application
 development, desktop application development, ERP development and ETL applications.
 Furthermore, I have led a team of 12 developers using the agile method.`;
 
+export const github = 'https://github.com/chokkipaterne';
+export const researchgate =
+  'https://www.researchgate.net/profile/Paterne-Chokki';
+export const googlescholar = '';
+export const linkedin = 'https://www.linkedin.com/in/paternechokki/';
+export const cv = cvpdf;
+
 export const personalInfo = [
   {
-    icon: FaUser,
-    title: 'FullName',
-    details: 'Abiola Paterne CHOKKI',
-    color: 'primary',
-    link: '',
+    icon: FaMailBulk,
+    title: 'Mail',
+    details: 'cpeterabiola@gmail.com',
+    color: 'green-light',
+    link: 'mailto:cpeterabiola@gmail.com',
   },
   {
     icon: FaPhone,
@@ -101,13 +107,6 @@ export const personalInfo = [
     details: 'Namur, Belgium',
     color: 'secondary',
     link: '',
-  },
-  {
-    icon: FaMailBulk,
-    title: 'Mail',
-    details: 'cpeterabiola@gmail.com',
-    color: 'green-light',
-    link: 'mailto:cpeterabiola@gmail.com',
   },
   {
     icon: FaLanguage,
@@ -154,7 +153,7 @@ export const services = [
   },
   {
     icon: FaServicestack,
-    title: 'Data Science',
+    title: 'Data Analysis',
     details: 'Convert your data into insightful stories',
     color: 'gray-light',
   },
@@ -177,7 +176,7 @@ export const experiences = [
       `Collaborated with diverse OGD stakeholders in Wallonia, encompassing municipal authorities, infomediaries, and citizens, to gather their specific needs.`,
       `Gained proficiency in ETL processes and created a comprehensive and
       versatile data storytelling tool, similar to Tableau, using Django, Angular,
-      Plotly Pandas, and PostgreSQL. This tool was designed to facilitate a rapid
+      Plotly, Pandas, and PostgreSQL. This tool was designed to facilitate a rapid
       comprehension of open government data for OGD stakeholders.`,
       `Proficiently documented stakeholder requirements, further disseminating
       insights through 10 scientific publications.`,
@@ -352,7 +351,7 @@ export const skills = [
   },
   {
     title: 'CMS',
-    details: ['Wordpress', 'Joomla'],
+    details: ['Wordpress'],
   },
   {
     title: 'Programming languages',
@@ -432,7 +431,7 @@ export const certificates = [
 ];
 
 export const portofolios = [
-  {
+  /*{
     name: 'My Website',
     description:
       'This project presents an overview of myself, services offered, projects done and research publications.',
@@ -441,7 +440,7 @@ export const portofolios = [
     image: mywebsite,
     source_code_link: 'https://github.com/chokkipaterne/chokkipaterne',
     preview: '',
-  },
+  },*/
   {
     name: 'Promptopia',
     description:
@@ -456,7 +455,7 @@ export const portofolios = [
     name: 'Sales Dashboard',
     description:
       'Case study based on Sales dataset. The objective is to help Sales manager to get an overview of sales, budgets and more.',
-    tags: ['Data'],
+    tags: ['ETL'],
     technologies: ['Power BI'],
     image: storedash,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_store',
@@ -466,7 +465,7 @@ export const portofolios = [
     name: 'HR Dashboard',
     description:
       'Case study based on a HR dataset. The objective is to help HR manager to have an overview of the performance of employees but also know how need to be promoted orto be laid off due to the economical issue in the enterprise.',
-    tags: ['Data'],
+    tags: ['ETL'],
     technologies: ['Power BI'],
     image: hrdash,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_hr',
@@ -496,7 +495,7 @@ export const portofolios = [
     name: 'ODE',
     description:
       'Open Data Explorer (ODE) is a generic and end-to-end tool which helps users through the different data storytelling stages.',
-    tags: ['Web', 'Data'],
+    tags: ['Web', 'ETL'],
     technologies: ['Django', 'Python', 'PostgreSQL'],
     image: ode,
     source_code_link: 'https://github.com/chokkipaterne/ode',
@@ -506,7 +505,7 @@ export const portofolios = [
     name: 'StoryOGD',
     description:
       'StoryOGD provides open data publishers with a tool to easily convert any conventional portal into storytelling portal that citizens can easily understand.',
-    tags: ['Web', 'Data'],
+    tags: ['Web', 'ETL'],
     technologies: ['Django', 'Python', 'PostgreSQL', 'JQuery', 'Javascript'],
     image: storyogd,
     source_code_link: 'https://github.com/chokkipaterne/ode',
@@ -526,7 +525,7 @@ export const portofolios = [
     name: 'Namur Budget Dashboard',
     description:
       'NBDash (Namur Budget Dashboard) is an interactive dashboard using two budget datasets (Namur-Ordinary Budget by function & Namur-Extraordinary Budget by function ) available on the Namur open data portal.',
-    tags: ['Data'],
+    tags: ['ETL'],
     technologies: ['Python', 'Dash Plotly', 'Plotly'],
     image: nbdash,
     source_code_link: 'https://github.com/chokkipaterne/nbdash',
@@ -544,7 +543,7 @@ export const portofolios = [
   },
 ];
 
-export const tags = ['All', 'Web', 'Mobile', 'Data'];
+export const tags = ['All', 'Web', 'Mobile', 'ETL'];
 
 export const publications = [
   {
