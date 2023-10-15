@@ -110,7 +110,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className='block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
                     placeholder=' '
-                    required=''
+                    required
                   />
                   <label
                     for='name'
@@ -128,7 +128,7 @@ const Contact = () => {
                     className='block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-[#5185D4] peer'
                     placeholder=' '
                     id='email'
-                    required=''
+                    required
                   />
                   <label
                     for='user_email'
@@ -145,7 +145,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder=''
                     id='message'
-                    required=''
+                    required
                     className='block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-[#5185D4] peer'
                   />
                   <label
