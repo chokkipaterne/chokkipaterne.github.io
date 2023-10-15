@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbdd66f5.css",
-    "main.js": "/static/js/main.5c26ef6c.js",
+    "main.css": "/static/css/main.2f34a126.css",
+    "main.js": "/static/js/main.2a3762c4.js",
     "static/js/787.26ed96de.chunk.js": "/static/js/787.26ed96de.chunk.js",
     "static/media/profile.jpg": "/static/media/profile.6b74fd3b0cb021a512ca.jpg",
     "static/media/promptopia.png": "/static/media/promptopia.6b8300c05a06cb8fcb57.png",
@@ -22,12 +22,12 @@
     "static/media/mobile.png": "/static/media/mobile.15e7b89f1018dcdba6e7.png",
     "static/media/logo.png": "/static/media/logo.f29b6f155598dab609ee.png",
     "index.html": "/index.html",
-    "main.cbdd66f5.css.map": "/static/css/main.cbdd66f5.css.map",
-    "main.5c26ef6c.js.map": "/static/js/main.5c26ef6c.js.map",
+    "main.2f34a126.css.map": "/static/css/main.2f34a126.css.map",
+    "main.2a3762c4.js.map": "/static/js/main.2a3762c4.js.map",
     "787.26ed96de.chunk.js.map": "/static/js/787.26ed96de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbdd66f5.css",
-    "static/js/main.5c26ef6c.js"
+    "static/css/main.2f34a126.css",
+    "static/js/main.2a3762c4.js"
   ]
 }
