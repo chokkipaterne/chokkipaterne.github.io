@@ -533,7 +533,8 @@ export const portofolios = [
     technologies: ['Java', 'Django', 'Python'],
     image: citizenapps,
     source_code_link: '',
-    preview: 'http://79.143.180.14:8050/apps/budget',
+    preview:
+      'https://play.google.com/store/apps/details?id=com.ogd.citizenapps&pli=1',
   },
 ];
 
