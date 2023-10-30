@@ -443,6 +443,16 @@ export const certificates = [
 
 export const portofolios = [
   {
+    name: 'ODE',
+    description:
+      'An end-to-end Open Data storytelling tool, akin to Tableau/Power BI, enabling users of all skill levels to craft data stories from government portals without coding. Features include OGD portal data collection, processing, quality checks, visualization recommendations, and story creation.',
+    tags: ['Web', 'Data Project'],
+    technologies: ['Django', 'Python', 'PostgreSQL'],
+    image: ode,
+    source_code_link: 'https://github.com/chokkipaterne/ode',
+    preview: 'http://79.143.180.14:7001/home-proto',
+  },
+  {
     name: 'Promptopia',
     description:
       'A community-oriented platform focused on uncovering and sharing distinctive prompts for AI language models.',
@@ -451,6 +461,37 @@ export const portofolios = [
     image: promptopia,
     source_code_link: 'https://github.com/chokkipaterne/promptopia',
     preview: 'https://promptopia-drab-alpha.vercel.app/',
+  },
+  {
+    name: 'ChatOne',
+    description:
+      'A Q&A system leveraging LLMs (like GPT4ALL, LLAMA, GPT3, GPT4) for queries across diverse formats including csv, xls, pdf, web pages, and YouTube videos.',
+    tags: ['Web', 'Data Project', 'Chatbot'],
+    technologies: ['Streamlit', 'Python', 'Pandas'],
+    image: chatone,
+    source_code_link: 'https://github.com/chokkipaterne/chatone',
+    preview: '',
+  },
+  {
+    name: 'Supply Chain Data Analytics',
+    description:
+      'A Power BI dashboard showcasing key KPIs (on-time delivery (OT) %, in-full delivery (IF) %, and on-time in full (OTIF) %) aiding a manufacturer in pinpointing and resolving key customer issues prior to business expansion.',
+    tags: ['Data Project'],
+    technologies: ['Power BI', 'Excel'],
+    image: supplychain,
+    source_code_link: 'https://github.com/chokkipaterne/powerbi_supplychain',
+    preview: '',
+  },
+  {
+    name: 'CitizenApps',
+    description:
+      "An Android application aggregating global Open Government Data services, apps, and visualizations into one platform with the aim to raise citizens' awareness of the existence and usefulness of open data.",
+    tags: ['Mobile'],
+    technologies: ['Java', 'Webview'],
+    image: citizenapps,
+    source_code_link: 'https://github.com/chokkipaterne/citizenapps',
+    preview:
+      'https://play.google.com/store/apps/details?id=com.ogd.citizenapps&pli=1',
   },
   {
     name: 'Retail Insights',
@@ -463,30 +504,10 @@ export const portofolios = [
     preview: '',
   },
   {
-    name: 'ChatOne',
-    description:
-      'A Q&A system leveraging LLMs (like GPT4ALL, LLAMA, GPT3, GPT4) for queries across diverse formats including csv, xls, pdf, web pages, and YouTube videos.',
-    tags: ['Web', 'Data'],
-    technologies: ['Streamlit', 'Python', 'Pandas'],
-    image: chatone,
-    source_code_link: 'https://github.com/chokkipaterne/chatone',
-    preview: '',
-  },
-  {
-    name: 'Supply Chain Data Analytics',
-    description:
-      'A Power BI dashboard showcasing key KPIs (on-time delivery (OT) %, in-full delivery (IF) %, and on-time in full (OTIF) %) aiding a manufacturer in pinpointing and resolving key customer issues prior to business expansion.',
-    tags: ['ETL'],
-    technologies: ['Power BI', 'Excel'],
-    image: supplychain,
-    source_code_link: 'https://github.com/chokkipaterne/powerbi_supplychain',
-    preview: '',
-  },
-  {
     name: 'HR Attendance Data analytics',
     description:
       'A Power BI dashboard to track employee data for the HR team, including working hours, attendance, performance, and leaves.',
-    tags: ['ETL'],
+    tags: ['Data Project'],
     technologies: ['Power BI', 'Excel'],
     image: hrattendance,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_hr_attendance',
@@ -496,7 +517,7 @@ export const portofolios = [
     name: 'Revenue Analysis for Hospitality',
     description:
       'A Power BI dashboard highlighting vital KPIs (such as Revenue per available rooom (RevPar), Average Daily Rate (ADR), Occupancy %) to assist hotels in understanding their revenue patterns.',
-    tags: ['ETL'],
+    tags: ['Data Project'],
     technologies: ['Power BI', 'Excel'],
     image: hospitality,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_hospitality',
@@ -506,7 +527,7 @@ export const portofolios = [
     name: 'HR Dashboard',
     description:
       'A Power BI dashboard to help HR manager to have an overview of the performance of employees but also know how need to be promoted orto be laid off due to the economical issue in the enterprise.',
-    tags: ['ETL'],
+    tags: ['Data Project'],
     technologies: ['Power BI', 'Excel'],
     image: hrdash,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_hr',
@@ -516,7 +537,7 @@ export const portofolios = [
     name: 'QualityOGD',
     description:
       'A conventional agent for users to conveniently evaluate content and metadata quality (completeness, accuracy, findability, understandability, etc.) of open government datasets.',
-    tags: ['Web'],
+    tags: ['Web', 'Chatbot'],
     technologies: ['Django', 'Angular', 'Python', 'Pandas'],
     image: qualityogd,
     source_code_link: 'https://github.com/chokkipaterne/qualityogd',
@@ -533,20 +554,10 @@ export const portofolios = [
     preview: 'http://79.143.180.14:7001/',
   },
   {
-    name: 'ODE',
-    description:
-      'An end-to-end Open Data storytelling tool, akin to Tableau/Power BI, enabling users of all skill levels to craft data stories from government portals without coding. Features include OGD portal data collection, processing, quality checks, visualization recommendations, and story creation.',
-    tags: ['Web', 'Data'],
-    technologies: ['Django', 'Python', 'PostgreSQL'],
-    image: ode,
-    source_code_link: 'https://github.com/chokkipaterne/ode',
-    preview: 'http://79.143.180.14:7001/home-proto',
-  },
-  {
     name: 'StoryOGD',
     description:
       'An enhanced ODE tool allowing publishers to transform traditional OGD portals into storytelling platforms .',
-    tags: ['Web', 'ETL'],
+    tags: ['Web', 'Data Project'],
     technologies: ['Django', 'Python', 'PostgreSQL', 'jQuery', 'Javascript'],
     image: storyogd,
     source_code_link: 'https://github.com/chokkipaterne/ode',
@@ -575,26 +586,15 @@ export const portofolios = [
   {
     name: 'Namur Budget Dashboard',
     description: `An interactive dashboard designed to offer insights into the allocation of Namur's budget, utilizing two datasets (Namur-Ordinary Budget by function & Namur-Extraordinary Budget by function) from the Namur open data portal.`,
-    tags: ['Data'],
+    tags: ['Data Project'],
     technologies: ['Python', 'Dash Plotly', 'Plotly'],
     image: nbdash,
     source_code_link: 'https://github.com/chokkipaterne/nbdash',
     preview: 'http://79.143.180.14:8050/apps/budget',
   },
-  {
-    name: 'CitizenApps',
-    description:
-      "An Android application aggregating global Open Government Data services, apps, and visualizations into one platform with the aim to raise citizens' awareness of the existence and usefulness of open data.",
-    tags: ['Mobile'],
-    technologies: ['Java', 'Webview'],
-    image: citizenapps,
-    source_code_link: 'https://github.com/chokkipaterne/citizenapps',
-    preview:
-      'https://play.google.com/store/apps/details?id=com.ogd.citizenapps&pli=1',
-  },
 ];
 
-export const tags = ['All', 'Web', 'Mobile', 'Data'];
+export const tags = ['All', 'Web', 'Mobile', 'Chatbot', 'Data Project'];
 
 export const publications = [
   {
@@ -607,7 +607,7 @@ export const publications = [
   {
     authors: '#Chokki, A.#, & Vanderose, B.',
     year: '2023',
-    details: `From Conventional Open Government Data Portals to Storytelling Portals : The StoryOGD Prototype. In 24th Annual International Conference on Digital Government Research, pages 1–2.`,
+    details: `#(Best Poster Award)# From Conventional Open Government Data Portals to Storytelling Portals : The StoryOGD Prototype. In 24th Annual International Conference on Digital Government Research, pages 1–2.`,
     type: 'Conference',
   },
   {

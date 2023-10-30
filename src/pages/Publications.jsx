@@ -73,9 +73,10 @@ const Publications = () => {
                   <p
                     className='text-black text-[10px] dark:text-light-text'
                     style={{ margin: 0 }}
-                  >
-                    {publication.details}
-                  </p>
+                    dangerouslySetInnerHTML={{
+                      __html: replaceChar(publication.details, '#'),
+                    }}
+                  ></p>
                 </div>
               </VerticalTimelineElement>
             ))}
