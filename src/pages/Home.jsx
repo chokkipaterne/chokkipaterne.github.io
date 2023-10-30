@@ -6,9 +6,11 @@ import {
   github,
   googlescholar,
   linkedin,
+  nameAuthor,
   personalInfo,
   researchgate,
   services,
+  titleAuthor,
 } from '../constants';
 import {
   FaFileDownload,
@@ -82,12 +84,9 @@ const Home = () => {
         <div className='col-span-12 md:col-span-9 space-y-2.5'>
           <div className=' md:mr-12 xl:mr-16'>
             <h3 className='text-2xl font-medium dark:text-white mb-2.5'>
-              Abiola Paterne CHOKKI
+              {nameAuthor}
               <br />
-              <span className='text-lg'>
-                Co-Founder of AhoueFa.com | PhD Researcher | Full Stack
-                Developer | Data Engineer/Analyst
-              </span>
+              <span className='text-lg'>{titleAuthor}</span>
             </h3>
             <p
               className='text-light-gray dark:text-light-text leading-7'

@@ -29,7 +29,13 @@ import qualityogd from '../assets/qualityogd.png';
 import storedash from '../assets/storedash.png';
 import storyogd from '../assets/storyogd.png';
 import citizenapps from '../assets/citizenapps.png';
+import chatone from '../assets/chatone.png';
+import mywebsite from '../assets/mywebsite.png';
+import hrattendance from '../assets/hrattendance.png';
+import supplychain from '../assets/supplychain.png';
+import hospitality from '../assets/hospitality.png';
 import cvpdf from '../assets/cv.pdf';
+import marketingpdf from '../assets/marketing.pdf';
 
 export const navLinks = [
   {
@@ -68,11 +74,12 @@ export const navLinks = [
     page: ContactPage,
   },
 ];
-
+export const nameAuthor = 'Abiola Paterne CHOKKI, PhD';
+export const titleAuthor =
+  'Co-Founder of AhoueFa.com | PostDoc Researcher | Full Stack Developer | Data Engineer/Analyst';
 export const aboutMe = `
-I hold #two Master's degrees# in Computer Science from the #University of La Rochelle, France# and 
-the #University of Vietnam#, along with an #engineering degree# in Telecommunications from the #University of Abomey Calavi, Benin#.
- I'm currently undertaking a #PhD#, focusing on the development of #automated tools# to enhance citizen engagement with #open government data#. My comprehensive IT experience spans diverse domains, including #web, mobile, desktop, and ERP application development, as well as ETL applications#. I've also had the privilege of leading a #12-member development team#, employing #agile# methodologies.`;
+I obtained my #PhD in Computer Science# from the #University of Namur, Belgium#, in October 2023 and currently serve as a #PostDoc Researcher# at the same institution's Faculty of Computer Science. My role primarily involves gathering and recording researchers' roles and tasks for the WP2 segment of the #Trusted AI# project under #ARIAC#.
+My comprehensive IT experience spans diverse domains, including #web, mobile, desktop, and ERP application development, as well as ETL applications#. I've also had the privilege of leading a #12-member development team#, employing #agile# methodologies.`;
 
 export const github = 'https://github.com/chokkipaterne';
 export const researchgate =
@@ -161,11 +168,22 @@ export const services = [
 
 export const experiences = [
   {
+    title: 'PostDoc Researcher',
+    company_name: 'Faculty of Computer Science, UNamur , Belgium',
+    icon: backend,
+    iconBg: '#383E56',
+    date: 'November 2023 - Current',
+    points: [
+      `Collect and document researchers' responsibilities within the WP2 of ARIAC project: Trusted AI.`,
+      `Introduce an AI-enhanced tool for Systematic Literature Reviews, aiming to cut research time by 40% (Pending validation).`,
+    ],
+  },
+  {
     title: 'Researcher in Data Storytelling with OGD',
     company_name: 'Faculty of Computer Science, UNamur , Belgium',
     icon: backend,
     iconBg: '#383E56',
-    date: 'December 2019 - November 2023',
+    date: 'December 2019 - October 2023',
     points: [
       `Collaborated with diverse #OGD stakeholders in Wallonia#, encompassing municipal authorities, infomediaries, and citizens, to gather their specific needs.`,
       `Gained proficiency in #ETL# processes and created a comprehensive and
@@ -319,7 +337,7 @@ export const educations = [
 export const skills = [
   {
     title: 'Frontend',
-    details: ['Angular', 'Vue', 'React', 'HTML/CSS', 'JavaScript', 'JQuery'],
+    details: ['Angular', 'Vue', 'React', 'HTML/CSS', 'JavaScript', 'jQuery'],
   },
   {
     title: 'Backend',
@@ -332,12 +350,11 @@ export const skills = [
       'NextJS',
       '.NET',
       'JSP',
-      'Spring',
     ],
   },
   {
     title: 'Mobile',
-    details: ['Ionic', 'Flutter'],
+    details: ['Ionic', 'React Native', 'Flutter'],
   },
   {
     title: 'ERP',
@@ -420,47 +437,77 @@ export const certificates = [
     title: 'Fundamentals of digital marketing',
     institution: 'Google',
     date: '2020',
-    link: '#',
+    link: marketingpdf,
   },
 ];
 
 export const portofolios = [
-  /*{
-    name: 'My Website',
-    description:
-      'This project presents an overview of myself, services offered, projects done and research publications.',
-    tags: ['Web'],
-    technologies: ['ReactJs', 'TailwindCSS'],
-    image: mywebsite,
-    source_code_link: 'https://github.com/chokkipaterne/chokkipaterne',
-    preview: '',
-  },*/
   {
     name: 'Promptopia',
     description:
-      'Promptopia is a community-driven platform dedicated to discovering and sharing unique and effective prompts for AI language models. Our goal is to expand the creative horizons of AI developers, enthusiasts, and researchers by providing a curated list of prompts from the community, for the community.',
+      'A community-oriented platform focused on uncovering and sharing distinctive prompts for AI language models.',
     tags: ['Web'],
-    technologies: ['ReactJs', 'TailwindCSS', 'NextJs', 'Mongodb'],
+    technologies: ['ReactJs', 'TailwindCSS', 'NextJs', 'MongoDB'],
     image: promptopia,
     source_code_link: 'https://github.com/chokkipaterne/promptopia',
     preview: 'https://promptopia-drab-alpha.vercel.app/',
   },
   {
-    name: 'Sales Dashboard',
+    name: 'Retail Insights',
     description:
-      'Case study based on Sales dataset. The objective is to help Sales manager to get an overview of sales, budgets and more.',
-    tags: ['ETL'],
-    technologies: ['Power BI'],
+      'A Power BI dashboard presenting sales metrics (like top customers, leading products, regional sales, and sales volume) for a store, aiding in data-driven decision-making.',
+    tags: ['Data Analysis'],
+    technologies: ['Power BI', 'Excel'],
     image: storedash,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_store',
     preview: '',
   },
   {
+    name: 'ChatOne',
+    description:
+      'A Q&A system leveraging LLMs (like GPT4ALL, LLAMA, GPT3, GPT4) for queries across diverse formats including csv, xls, pdf, web pages, and YouTube videos.',
+    tags: ['Web', 'Data'],
+    technologies: ['Streamlit', 'Python', 'Pandas'],
+    image: chatone,
+    source_code_link: 'https://github.com/chokkipaterne/chatone',
+    preview: '',
+  },
+  {
+    name: 'Supply Chain Data Analytics',
+    description:
+      'A Power BI dashboard showcasing key KPIs (on-time delivery (OT) %, in-full delivery (IF) %, and on-time in full (OTIF) %) aiding a manufacturer in pinpointing and resolving key customer issues prior to business expansion.',
+    tags: ['ETL'],
+    technologies: ['Power BI', 'Excel'],
+    image: supplychain,
+    source_code_link: 'https://github.com/chokkipaterne/powerbi_supplychain',
+    preview: '',
+  },
+  {
+    name: 'HR Attendance Data analytics',
+    description:
+      'A Power BI dashboard to track employee data for the HR team, including working hours, attendance, performance, and leaves.',
+    tags: ['ETL'],
+    technologies: ['Power BI', 'Excel'],
+    image: hrattendance,
+    source_code_link: 'https://github.com/chokkipaterne/powerbi_hr_attendance',
+    preview: '',
+  },
+  {
+    name: 'Revenue Analysis for Hospitality',
+    description:
+      'A Power BI dashboard highlighting vital KPIs (such as Revenue per available rooom (RevPar), Average Daily Rate (ADR), Occupancy %) to assist hotels in understanding their revenue patterns.',
+    tags: ['ETL'],
+    technologies: ['Power BI', 'Excel'],
+    image: hospitality,
+    source_code_link: 'https://github.com/chokkipaterne/powerbi_hospitality',
+    preview: '',
+  },
+  {
     name: 'HR Dashboard',
     description:
-      'Case study based on a HR dataset. The objective is to help HR manager to have an overview of the performance of employees but also know how need to be promoted orto be laid off due to the economical issue in the enterprise.',
+      'A Power BI dashboard to help HR manager to have an overview of the performance of employees but also know how need to be promoted orto be laid off due to the economical issue in the enterprise.',
     tags: ['ETL'],
-    technologies: ['Power BI'],
+    technologies: ['Power BI', 'Excel'],
     image: hrdash,
     source_code_link: 'https://github.com/chokkipaterne/powerbi_hr',
     preview: '',
@@ -468,9 +515,9 @@ export const portofolios = [
   {
     name: 'QualityOGD',
     description:
-      'QualityOGD, a conventional agent for Open Government Data Quality Assessment.',
+      'A conventional agent for users to conveniently evaluate content and metadata quality (completeness, accuracy, findability, understandability, etc.) of open government datasets.',
     tags: ['Web'],
-    technologies: ['Django', 'Angular', 'Python'],
+    technologies: ['Django', 'Angular', 'Python', 'Pandas'],
     image: qualityogd,
     source_code_link: 'https://github.com/chokkipaterne/qualityogd',
     preview: 'http://79.143.180.14:7071/',
@@ -478,7 +525,7 @@ export const portofolios = [
   {
     name: 'ODEON',
     description:
-      'ODEON (Open Data Exchange solutiON) is a centralized repository whose objective is to facilitate communication between Open Government Data (OGD) stakeholders: citizens, developers and publishers.',
+      'A collaborative platform connecting citizens, developers, and data providers. Features include citizens proposing OGD service ideas and developers communicating data needs and issues to publishers.',
     tags: ['Web'],
     technologies: ['Django', 'Python', 'PostgreSQL'],
     image: odeon,
@@ -488,8 +535,8 @@ export const portofolios = [
   {
     name: 'ODE',
     description:
-      'Open Data Explorer (ODE) is a generic and end-to-end tool which helps users through the different data storytelling stages.',
-    tags: ['Web', 'ETL'],
+      'An end-to-end Open Data storytelling tool, akin to Tableau/Power BI, enabling users of all skill levels to craft data stories from government portals without coding. Features include OGD portal data collection, processing, quality checks, visualization recommendations, and story creation.',
+    tags: ['Web', 'Data'],
     technologies: ['Django', 'Python', 'PostgreSQL'],
     image: ode,
     source_code_link: 'https://github.com/chokkipaterne/ode',
@@ -498,9 +545,9 @@ export const portofolios = [
   {
     name: 'StoryOGD',
     description:
-      'StoryOGD provides open data publishers with a tool to easily convert any conventional portal into storytelling portal that citizens can easily understand.',
+      'An enhanced ODE tool allowing publishers to transform traditional OGD portals into storytelling platforms .',
     tags: ['Web', 'ETL'],
-    technologies: ['Django', 'Python', 'PostgreSQL', 'JQuery', 'Javascript'],
+    technologies: ['Django', 'Python', 'PostgreSQL', 'jQuery', 'Javascript'],
     image: storyogd,
     source_code_link: 'https://github.com/chokkipaterne/ode',
     preview: 'http://79.143.180.14:7001/home-trans',
@@ -508,18 +555,27 @@ export const portofolios = [
   {
     name: 'ODSAG',
     description:
-      'ODSAG (Open Data Semantic Annotation and Graph), a chrome extension that automatically an- notates any open dataset and creates graphs (minimal and full graphs) from it.',
+      'A chrome extension that automatically annotates any open dataset and creates graphs (minimal and full graphs) from it.',
     tags: ['Web'],
-    technologies: ['Django', 'Python', 'Javascript'],
+    technologies: ['Django', 'Python', 'Javascript', 'jQuery'],
     image: odsag,
     source_code_link: 'https://github.com/chokkipaterne/odsag',
     preview: '',
   },
   {
-    name: 'Namur Budget Dashboard',
+    name: 'Portofolio Website',
     description:
-      'NBDash (Namur Budget Dashboard) is an interactive dashboard using two budget datasets (Namur-Ordinary Budget by function & Namur-Extraordinary Budget by function ) available on the Namur open data portal.',
-    tags: ['ETL'],
+      'A comprehensive look at my background, services provided, completed projects, and research publications.',
+    tags: ['Web'],
+    technologies: ['ReactJs', 'TailwindCSS'],
+    image: mywebsite,
+    source_code_link: 'https://github.com/chokkipaterne/chokkipaterne',
+    preview: '',
+  },
+  {
+    name: 'Namur Budget Dashboard',
+    description: `An interactive dashboard designed to offer insights into the allocation of Namur's budget, utilizing two datasets (Namur-Ordinary Budget by function & Namur-Extraordinary Budget by function) from the Namur open data portal.`,
+    tags: ['Data'],
     technologies: ['Python', 'Dash Plotly', 'Plotly'],
     image: nbdash,
     source_code_link: 'https://github.com/chokkipaterne/nbdash',
@@ -528,17 +584,17 @@ export const portofolios = [
   {
     name: 'CitizenApps',
     description:
-      " A mobile application that raises citizens' awareness of the existence and usefulness of open data.",
+      "An Android application aggregating global Open Government Data services, apps, and visualizations into one platform with the aim to raise citizens' awareness of the existence and usefulness of open data.",
     tags: ['Mobile'],
-    technologies: ['Java', 'Django', 'Python'],
+    technologies: ['Java', 'Webview'],
     image: citizenapps,
-    source_code_link: '',
+    source_code_link: 'https://github.com/chokkipaterne/citizenapps',
     preview:
       'https://play.google.com/store/apps/details?id=com.ogd.citizenapps&pli=1',
   },
 ];
 
-export const tags = ['All', 'Web', 'Mobile', 'ETL'];
+export const tags = ['All', 'Web', 'Mobile', 'Data'];
 
 export const publications = [
   {
